@@ -1,1 +1,11 @@
 Тут будет статья!
+
+<%= link_to :controller => :survey do %>
+  <button class="button">Начать тестирование</button>
+<% end %>
+
+
+<%= form_for :home, :url => {:controller => 'survey'} do |f| %>
+  <%= f.submit('Перейти далее') %>
+<% end %>
+

@@ -4,4 +4,13 @@ Rails.application.routes.draw do
   root to: 'home#show'
 
   post '/home/start_test', to: 'home#start_test'
+  resources :survey
+
+=begin
+  get '/home/start_test'
+
+
+=end
+
+
 end
